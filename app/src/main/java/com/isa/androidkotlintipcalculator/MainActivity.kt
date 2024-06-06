@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 
 class MainActivity : AppCompatActivity()
 {
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         // To hide the status bar.
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
